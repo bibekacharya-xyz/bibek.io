@@ -247,7 +247,7 @@ section {
     position: relative;
 }
 .nav-links a:hover {
-    color: #2563eb;
+    color: black;
     transition: color 0.3s ease;
 }
 .nav-links a::after {
