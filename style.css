@@ -243,8 +243,23 @@ section {
   text-decoration: none;
 }
 
-.nav-links a:hover {
-  --blue-700: #2563eb;
+.nav-links a {
+    position: relative;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 0;
+    height: 2px;
+    background-color: #2563eb;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
 }
 
 .nav-links a[aria-current="true"] {
