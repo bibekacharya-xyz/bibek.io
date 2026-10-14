@@ -246,7 +246,10 @@ section {
 .nav-links a {
     position: relative;
 }
-
+.nav-links a:hover {
+    color: #2563eb;
+    transition: color 0.3s ease;
+}
 .nav-links a::after {
     content: "";
     position: absolute;
